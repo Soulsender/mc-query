@@ -6,7 +6,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 # copy source code to container
-COPY . /app
+COPY ./src /app
 
 # Use the python:3.9-alpine image to run the application
 FROM python:3.9-alpine
