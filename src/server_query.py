@@ -4,6 +4,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 import os
 
 # Configuration
+# make sure to use env for security
 server = str(os.getenv("SERVER"))
 webhook_url = str(os.getenv("WEBHOOK_URL"))
 
