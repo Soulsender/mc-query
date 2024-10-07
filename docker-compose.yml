@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mc-query:
+    image: soulsender/mc-query:latest
+    environment:
+      - SERVER=ip or hostname
+      - WEBHOOK_URL=your discord webhook url
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    
