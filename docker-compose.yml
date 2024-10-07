@@ -6,7 +6,5 @@ services:
     environment:
       - SERVER=ip or hostname
       - WEBHOOK_URL=your discord webhook url
-    volumes:
-      - ./data:/app/data
     restart: unless-stopped
     
