@@ -10,7 +10,7 @@ COPY ./src /app
 COPY ./requirements.txt /app
 
 # Use the python:3.9-alpine image to run the application
-FROM python:3.9-alpine
+FROM python:3.14.3-alpine
 
 # create app directory in container
 RUN mkdir -p /app
